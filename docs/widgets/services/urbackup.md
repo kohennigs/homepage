@@ -11,7 +11,9 @@ The default number of days that can elapse before a client is marked Out of Date
 
 Optionally, the widget can also report the total amount of disk space consumed by backups. This is disabled by default, because it requires a second API call.
 
-Note: client status is only shown for backups that the specified user has access to. Disk Usage shown is the total for all backups, regardless of permissions.
+Notes: 
+- client status is only shown for backups that the specified user has access to. Disk Usage shown is the total for all backups, regardless of permissions.
+- to get urbackup data, without creating an urbackup admin, the homepage user must have access rights (all) to the domains "piegraph", "status" and "users".
 
 Allowed fields: `["ok", "errored", "noRecent", "totalUsed"]`. _Note that `totalUsed` will not be shown unless explicitly included in `fields`._
 
